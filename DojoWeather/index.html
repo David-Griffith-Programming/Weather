@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="top-background">
+        <!-- Top Nav -->
+    <div id="top">
+
+        <!-- Left side of Nav -->
+        <div class="left-nav">
+            <h1>DojoWeather</h1>
+        </div>
+
+        <!-- Right side of nav -->
+        <div class="right-nav">
+            <a href="#" id="city-1" onclick="loadPage(this)">Burbank</a>
+            <a href="#" id="city-2" onclick="loadPage(this)">Chicago</a>
+            <a href="#" id="city-3" onclick="loadPage(this)">Dallas</a>
+        </div>
+    </div>
+    
+</div>
+    <!-- Body Container -->
+<div id="body-container">
+    <!-- San Jose line -->
+    <div class="sanjose">
+        <h1>San Jose</h1>
+        <p>
+            <label class="tempLabel">show temperature in</label>
+            <select name="temp" id="temps" onchange="convertTemps()">
+                <option>°C</option>
+                <option>°F</option>
+            </select> 
+        </p>
+    </div>
+</div>
+    <!-- Weather Container -->
+    <div id="weatherContainer">
+        <!-- Weather Blocks -->
+        <div class="weatherBlock">
+            <h1>Today</h1>
+            <img src="images/assets/some_rain.png" alt="Cloud with some" class="someRain">
+            <p class="weatherBlockP">some rain</p>
+            <div class="span-div">
+              <span class="span-div-spacing1" id="span1">24°</span><span class="span-div-spacing2" id="span2">18°</span>  
+            </div>   
+        </div>
+        <div class="weatherBlock">
+            <h1>Tomorrow</h1>
+            <img src="images/assets/some_sun.png" alt="Cloud with some" class="someRain">
+            <p class="weatherBlockP">some sun</p>
+            <div class="span-div">
+              <span class="span-div-spacing1" id="span3">27°</span><span class="span-div-spacing2" id="span4">19°</span>  
+            </div>   
+        </div>
+        <div class="weatherBlock">
+            <h1>Friday</h1>
+            <img src="images/assets/some_clouds.png" alt="Cloud with some" class="someRain">
+            <p class="weatherBlockP">some clouds</p>
+            <div class="span-div">
+              <span class="span-div-spacing1" id="span5">21°</span><span class="span-div-spacing2" id="span6">16°</span>  
+            </div>   
+        </div>
+        <div class="weatherBlock">
+            <h1>Saturday</h1>
+            <img src="images/assets/some_sun.png" alt="Cloud with some" class="someRain">
+            <p class="weatherBlockP">some sun</p>
+            <div class="span-div">
+              <span class="span-div-spacing1" id="span7">26°</span><span class="span-div-spacing2" id="span8">21°</span>  
+            </div>   
+        </div>
+        
+    </div>
+    <!-- Cookie Time -->
+    <div id="cookieTimeContainer">
+        <img src="images/assets/cookie.png" alt="cookie">
+        <p><strong>Stop! Cookie Time</strong><br>
+            We use cookies (sadly not the edible ones) to personalize<br>
+            content and ads, to provide social media features and to<br>
+            analyse our traffic. <a href="#">Read More...</a>
+        </p>
+        <button class="acceptButton" onclick="hide()">I Accept</button>
+    </div>
+    
+        
+        
+
+        
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

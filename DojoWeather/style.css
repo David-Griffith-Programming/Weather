@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+.top-background{
+    background-color: #9fc5f8;
+}
+
+#top{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    width: 900px;
+    margin: 0 auto;
+}
+.right-nav{
+    display: flex;
+}
+.right-nav a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+#body-container{
+    padding: 15px;
+    margin: 0 auto;
+    width: 900px;
+    border-bottom: 2px solid black;
+}
+.sanjose{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tempLabel{
+    font-size: 20px;
+}
+#temps{
+    padding:5px;
+}
+#weatherContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 900px;
+}
+.weatherBlock{
+    background-color: #eeeeee;
+    padding: 15px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.someRain{
+    margin-top: 15px;
+    height: 150px;
+    border-radius: 50%;
+}
+.span-div-spacing1, .span-div-spacing2{
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.span-div{
+    display: flex;
+    margin-top: 15px;
+}
+.span-div-spacing1{
+    color: red;
+}
+.span-div-spacing2{
+    color: #2b78e4;
+}
+.weatherBlockP{
+    margin-top: 15px;
+    font-size: 20px;
+}
+#cookieTimeContainer{
+    width: 900px;
+    margin: 0 auto;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: row;
+    background-color: #eeeeee;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    margin-top: 5px;
+    font-size: 22px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.acceptButton{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 15px 5px 15px;
+    border: 3px solid black;
+    box-shadow: 3px 3px black;
+    background-color: #9fc5f8;
+}
+#cookieTimeContainer img, #cookieTimeContainer p, #cookieTimeContainer button{
+    margin-left: 35px;
+}
